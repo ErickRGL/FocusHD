@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="settings.css">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous"> 
+  </head>
+
+  <body>
+    <h1>FocusHD settings</h1> 
+    <h2>Type of list</h2>
+    <p>Select the default behavior of the app. If you select white lists only the sites in the active white lists will be available.<br>If you select black lists, only the websites on the sites on the active black lists will not be accesible.</p>
+    <label>List type: 
+      <select id="settings-type">
+        <option value="blacklist">Black list</option>
+        <option value="whitelist">White list</option>
+      </select>
+    </label>
+
+    <br><br><br>
+    <h1>List settings</h1>
+    <option class="option-template">List a</option>
+    <label>Select your list</label>
+    <select id="lists">
+      <option>List b</option>
+      <option>List c</option>
+    </select>
+
+    <form>
+      <button type="button" id="new-list">Add list</button>
+    </form>
+    <form>
+      <h3>
+          <label>List</label> <input type="text" id="name">
+          <button type="button" id="delete-list">Delete list</button>
+      </h3> 
+      <label>List type: 
+        <select id="list-type">
+          <option value="blacklist">Black list</option>
+          <option value="whitelist">White list</option>
+        </select>
+      </label>
+        <h3>This list is <span id="active-paragraph">active</span></h3> 
+        <div class="switch">
+            <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+            <label for="cmn-toggle-7" data-on="Active" data-off="Inactive"></label>
+        </div>
+
+      <h3>Sites to block</h3>
+      <div class="sites">
+        <table id="normal-site" class="sites-table responstable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+           <tbody >
+                <tr class="site-template">
+                    <td>
+                        <input type="text" id="site[]" class="name"> 
+                    </td>
+                    <td>
+                        <button class="remove">new</button> </td>
+
+                </tr>
+           </tbody> 
+        </table> 
+        <button class="add-site" type="button">Add site</button>
+      </div>
+
+      
+      <br><br>
+
+      <table>
+          <tbody>
+                <tr class="site-template">
+                    <td>
+                        <input type="text" id="site[]" class="name"> 
+                    </td>
+                    <td>
+                        <button class="remove">
+                            <i class="fa fa-times" aria-hidden="true"></i> 
+                        </button> 
+                    </td>
+                </tr>
+          </tbody>
+      </table>
+      
+      <button id="save" type="submit">Save Changes</button>
+      <button class="export-list" type="button">Export list</button>
+
+    </form>
+
+
+    <div class="add-margin">
+      <h1>Import a list</h1>
+      <form>
+        
+        <label>Import a list: </label>
+        <input type="file" id="import">
+
+      </form>
+    </div> 
+
+    <script src="../shared/jquery-3.2.1.min.js"></script>
+    <script src="settings.js"></script>
+    <script src="sharing.js"></script>
+
+    <div class="footer">
+        <ul class="footer-list">
+            <li>
+                <a target="_blank" href="../about/about_focushd.html"> Learn more about FocusHD</a>
+            </li>
+            <li>
+                <a target="_blank" href="../about/about_adhd.html"> Learn more about ADHD</a>
+            </li>
+        </ul>
+        
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "focushd",
+  "version": "1.0.0",
+  "description": "An extension that allows you to be concentrated in yout daily tasks",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "jquery": "3.1.1",
+    "jsdom": "^11.3.0",
+    "mocha": "^3.5.3"
+  },
+  "scripts": {
+    "test": "open -a firefox -g https://testsfocus.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://integrador1@integrador1.visualstudio.com:22/_git/FocusHD"
+  },
+  "license": "MPL-2.0"
+}

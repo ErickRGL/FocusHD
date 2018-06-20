@@ -1,0 +1,55 @@
+{
+  "manifest_version": 2,
+  "name": "FocusHD",
+  "version": "1.0.1",
+  "description": "An extenssion that allows you to be concentrated in yout daily tasks",
+  "icons": {
+    "48": "icons/icono48.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "focushd@focushd.com",
+      "strict_min_version": "42.0"
+    }
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "alarms",
+    "tabs",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking", 
+    "storage",
+    "notifications",
+    "downloads"
+  ],
+
+  "page_action": {
+    "default_icon": "icons/icono32.png",
+    "default_title": "FocusHD"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icono32.png",
+    "default_title": "FocusHD",
+    "default_popup": "popup/popup.html"
+  },
+
+  "options_ui": {
+    "page": "settings/settings_ui.html"
+  },
+
+  "background": {
+    "scripts": [
+      "background/exceptions.js",
+      "background/timer.js", 
+      "background/blocker.js",
+      "background/statistic.js",
+      "background/messageHandler.js",
+      "background/lives.js"
+    ]
+  }
+
+}

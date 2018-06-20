@@ -1,0 +1,72 @@
+html, body {
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.navbar {
+    background: white;
+    border-bottom: 1px solid #1cd7c9;
+}
+
+
+a{
+    color: #464f51;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1CD7C9;
+}
+
+.active {
+    color: #1CD7C9;
+}
+
+.active:hover {
+    color: #464f51;
+}
+b, h2 {
+    color: #1CD7C9;
+}
+
+.bg-light{
+    background-color: #464f51 !important;
+    color: white;
+}
+
+footer{
+    color: #000000;
+    border-top: 1px solid #1cd7c9;
+    padding: 1em !important;
+}
+
+.navbar-toggler{
+    border-color: #464f51;
+}
+.icon-bar {
+    border: 1px solid #464f51 !important;
+    display: block;
+    height: 4px;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 20%;
+}
+
+.icon-bar:hover {
+    background: #464f51;
+}
+
+.navbar-toggler:hover{
+    background: #464f51;
+}
+
+.navbar-toggler:hover .icon-bar{
+    border: 1px solid white !important;
+}
+
+section{
+    padding: 5em 0;
+}

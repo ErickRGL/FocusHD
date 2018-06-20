@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha Tests</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="test-container" style="display:none">
+      <input type="text" id="name">
+      <select id="settings-type">
+        <option value="blacklist">Black list</option>
+        <option value="whitelist">White list</option>
+      </select>
+
+      <option class="option-template">List a</option>
+      <select id="lists">
+        <option>List b</option>
+        <option>List c</option>
+      </select>
+
+      <form>
+        <h3><label>List</label> <input type="text" id="name"><button type="button" id="delete-list">Delete list</button></h3> 
+        
+          <h3>This list is <span id="active-paragraph">active</span></h3> 
+          <div class="switch">
+              <input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+              <label for="cmn-toggle-7" data-on="Active" data-off="Inactive"></label>
+          </div>
+
+          <select id="list-type">
+            <option value="blacklist">Black list</option>
+            <option value="whitelist">White list</option>
+          </select>
+        </form>
+    </div>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+    <script src="shared/jquery-3.2.1.min.js"></script>
+    <script src="test/config.js"></script>
+    
+    <!-- load code you want to test here -->
+    <script src="background/timer.js"></script>
+    <script src="settings/settings.js"></script>
+    <script src="background/lives.js"></script>
+
+    <!-- load your test files here -->
+    <script src="test/timer.test.js"></script>
+    <script src="test/settings.test.js"></script>
+    <script src="test/lives.test.js"></script>
+
+    <script src="test/run.js"></script>
+</body>
+</html>

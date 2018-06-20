@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Focus HD</title>
+        <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="row"> 
+                <div class="flex-item">
+                    FOCUS<span class="blue">HD</span>
+                    <br>
+                    <div class="lives" id="livesIcons">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="flex-item">
+                    <div id="modalDiv" >
+                        <button id="openButton">Continue to page</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex-footer">
+            <ul class="footer-list">
+                <li>
+                    <a href="about/about_focushd.html">About</a>
+                </li>
+                <li>
+                    <a href="about/about_adhd.html">Info</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="myModal" class="modal">
+            <div class="flex-container modal-content">
+                        <span class="close">&times;</span>
+                <div class="row"> 
+                    <div class="flex-item">
+                        <h2>Don't waste your time</h2>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="flex-item">
+                        <p id="textLives">You got X lives left</p>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="flex-item">
+                        <!-- <button id="distract" class="modalButton">I don't want to be productive</button> -->
+                        <button id="distract" class="modalButton" title="I don't want to be productive">Waste a life</button>
+                        <button id="closeTab" class="modalButton" title="This will close the current tab">Continue working</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+    
+    <script src="shared/jquery-3.2.1.min.js"></script>
+    <script src="focus.js"></script>
+
+</html>
